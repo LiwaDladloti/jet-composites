@@ -1,0 +1,383 @@
+<div class="search-component">
+  <style media="screen">
+    #img {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 25px;
+
+    }
+  </style>
+
+  <div class="container">
+
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+
+    <div class="input-group" style="width: 40rem;">
+      <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"> -->
+      <input class="prompt form-control" type="text" placeholder="Search location..." data-bind="value: searchSuburb" aria-label="Search location..." aria-describedby="basic-addon2">
+      <span class="input-group-addon" data-bind="click: searchBtn" id="basic-addon2"><i class="search icon"></i></span>
+    </div>
+      
+
+    <!-- <div class="ui search"> -->
+    <!-- <div class="ui icon input"> -->
+
+    <!-- </div> -->
+    <!-- <button data-bind="click: searchBtn">Search</button> -->
+    <!-- <div data-bind="foreach: allEvents">
+      <p data-bind="text: name"></p>
+    </div> -->
+    <!-- </div> -->
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/art.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center" data-bind="click: artCat">Art</a>
+          </div>
+          <!-- <div data-bind="foreach: allArtCat">
+            <p data-bind="text: category"></p>
+          </div> -->
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/paint-palette.svg" data-toggle="tooltip" data-placement="bottom" title="Painting">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/vector.svg" data-toggle="tooltip" data-placement="bottom" title="Acting">
+
+                </div>
+                <div class="col-md-4">
+
+                  <img class="ui centered tiny image" id="img" src="css/images/theater.svg" data-toggle="tooltip" data-placement="bottom" title="Theater">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLongTitle">The Art of Happiness</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="description">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/calendar.svg">
+                    </div>
+                    <div class="col-md-10">
+
+                      <!-- <span class="category" data-bind="text: date"></span> -->
+                      <span class="right floated time">10:30am</span>
+
+                    </div>
+                  </div>
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/information.svg">
+                    </div>
+                    <div class="col-md-10">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+
+                    </div>
+                  </div>
+                  <br>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/placeholder.svg">
+                    </div>
+                    <div class="col-md-10">
+
+                      <p>P3 Terrace Level, Portswood Square, Portswood Rd, <br>V & A Waterfront, Cape Town <br> 8001</p>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/sun.svg">
+                    </div>
+                    <div class="col-md-10">
+                      <p>Sunny</p>
+
+                    </div>
+                  </div>
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <p><img class="ui centered mini image" src="css/images/share.svg">
+
+                    </div>
+                    <div class="col-md-10">
+                      <p><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/events/427432971004534/" target="_blank" rel="noopener"><img class="ui centered mini image" src="css/images/facebook.svg">
+
+                        </a>
+
+                        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello,%20world.%20@project_codeX%20presents%20you%20November%20Hackathon%202017%20and%20Super%20Saiyans%20are%20winning." target="_blank" rel="noopener"><img class="ui centered mini image" src="css/images/twitter.svg"></a></p>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="text-center">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13244.78546320939!2d18.4216702!3d-33.91034535!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1511364571590" width="550" height="450" frameborder="0" style="border-radius:8px" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-bind="foreach: allArtCat">
+        <div class="col-md-4">
+          <div class="ui link card">
+            <div class="content">
+              <a class="text-center">
+                <p data-bind="text: category, click: $parent.nameClick" style="width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" data-toggle="modal" data-target="#exampleModalLong"></p>
+              </a>
+              <!-- <a class="header text-center">Art</a> -->
+            </div>
+            <div class="image">
+              <img src="css/images/art.svg">
+            </div>
+            <div class="extra content">
+              <div class="description">
+                <div class="row">
+                  <p class="col-md-8 float-left">Sunny</p>
+                  <span class="col-md-4 float-right">
+            <img class="ui centered tiny image" src="css/images/sun.svg" data-content="The default theme's basic popup removes the pointing arrow." data-variation="basic">
+          </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/music.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center" data-bind="click: musicCat">Music</a>
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/dj.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/stage.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trumpet.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/trophy.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Sport</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/boxing.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/rugby.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/soccer.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-bind="foreach: allMusicCat">
+        <div class="col-md-4">
+          <div class="ui link card">
+            <div class="image">
+              <img src="css/images/trophy.svg">
+            </div>
+            <div class="content">
+              <a class="text-center">
+                <p data-bind="text: category, " style="width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></p>
+              </a>
+
+            </div>
+            <div class="extra content">
+              <div class="row">
+                <div class="text-center">
+                  <div class="col-md-4">
+                    <img class="ui centered tiny image" id="img" src="css/images/boxing.svg">
+
+                  </div>
+                  <div class="col-md-4">
+                    <img class="ui centered tiny image" id="img" src="css/images/rugby.svg">
+
+                  </div>
+                  <div class="col-md-4">
+                    <img class="ui centered tiny image" id="img" src="css/images/soccer.svg">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/confetti.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Parties</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/sandwich.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Food & Drink</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/collaboration.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Networking</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trophy.svg">
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
